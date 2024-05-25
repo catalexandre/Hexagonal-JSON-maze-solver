@@ -19,13 +19,11 @@ Now, the tiles' information was given in a JSON file as I have previously mentio
 HECS' Wikipedia page.
 
 The algorithm I chose to implement to solve the mazes was a simple backtracking algorithm as I already had made up a pseudocode implementation in my head while reading the problem's explanation. The steps performed by my algorithm are the following:
-<li>
-  <ol>Go to the tile labelled as START</ol>
-  <ol>Assess the tile(s) to which you can move to, and if the tile you are currently standing one has more that one path you can take, add the current tile to a stack of tiles called nodes</ol>
-  <ol>Move to a random NORMAL (non-wall) adjacent tile which you have not explored, and add that tile to the list of tiles you have explored</ol>
-  <ol>Repeat step two and three until you have nowhere to go, which is when you will then go back to the tile you get when removing the last tile off of the nodes tiles stack</ol>
-  <ol>Stop the algorithm when you move to the END tile and return the solution as the tiles you have never backtracked onto.</ol>
-</li>
+1. Go to the tile labelled as START
+2. Assess the tile(s) to which you can move to, and if the tile you are currently standing one has more that one path you can take, add the current tile to a stack of tiles called nodes
+3. Move to a random NORMAL (non-wall) adjacent tile which you have not explored, and add that tile to the list of tiles you have explored
+4. Repeat step two and three until you have nowhere to go, which is when you will then go back to the tile you get when removing the last tile off of the nodes tiles stack
+5. Stop the algorithm when you move to the END tile and return the solution as the tiles you have never backtracked onto.
 
 This depth-first search (DFS) algorithm indeed looks easy when written as four basic steps, and I will agree with you that it is probably one of the easiest maze solving algorithms I could have chosen to implement, but the difficulty comes from the implementation of this 
 algorithm in a program used to solve Hexagonal mazes, rather than a square-tiled maze.
