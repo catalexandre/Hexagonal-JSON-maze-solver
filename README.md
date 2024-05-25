@@ -30,4 +30,10 @@ algorithm in a program used to solve Hexagonal mazes, rather than a square-tiled
 
 I had considered implementing the A* algorithm, but I established that in the context of a competition with limited time, this decision would not give me the chance to finish within the alloted time period.
 
+Here is a Intermediate level maze being solved by my algorithm
 ![](IntermediateMaze.gif)
+
+Here is a Hard level maze being solved by my algorithm
+![](HardMaze.gif)
+
+The algorithm is not extremely fast to parse the JSON files, and this becomes increasingly obvious when I open HARD level mazes, but I assume that these limitations comes from GameMaker Studio 2's JSON functions, as being a game engine, it is most likely not supposed to be used to parse JSON files of one-hundred and twenty five thousand lines.
