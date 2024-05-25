@@ -30,4 +30,4 @@ algorithm in a program used to solve Hexagonal mazes, rather than a square-tiled
 
 I had considered implementing the A* algorithm, but I established that in the context of a competition with limited time, this decision would not give me the chance to finish within the alloted time period.
 
-![gif test](2024-05-25 16-13-40.gif)
+![](2024-05-25 16-13-40.gif)
