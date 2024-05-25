@@ -11,7 +11,7 @@ that I was to find ANY solution that was in the form of a path only passing thro
 in four categories, all containing 100 of those 400 mazes, and the mazes each gave you different amount of points when you found the solution depending on which category that maze found itself in. The categories were easy, intermediate, hard and extreme.
 
 Now it is correct for you to assume that the Hexagonal in the name of this repository serves a purpose and indeed you are right! The labyrinths tiles given were in fact meant to be displayed in a hexagonal manner, meaning that I had to learn how to use a new, to me, coordinate system.
-This coordinate system is called the Hexagonal Efficient Coordinate System (HECS) and more information about it can be found on this wikipedia page: https://en.wikipedia.org/wiki/Hexagonal_Efficient_Coordinate_System
+This coordinate system is called the Hexagonal Efficient Coordinate System (HECS) and more information about it can be found on it's [Wikipedia page](https://en.wikipedia.org/wiki/Hexagonal_Efficient_Coordinate_System).
 
 The first thing I had to do was choose which language or Platform I would use to solve the problem, and I ended up choosing GameMaker Studio 2 as I have a lot of experience using this software and I knew that it would make creating a vizualisation for my algorithm much easier.
 
