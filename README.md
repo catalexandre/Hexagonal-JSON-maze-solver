@@ -46,3 +46,7 @@ Here is a Hard level maze being solved by my algorithm
 The algorithm is not extremely fast to parse the JSON files, and this becomes increasingly obvious when I open HARD level mazes, or the fact that I have never managed to open a extreme level maze, but I assume that these limitations come from GameMaker Studio 2's JSON functions, as being a game engine, it is most likely not supposed to be used to parse JSON files of one hundred twenty-five thousand lines. I use a simple for loop to traverse the JSON string and retrieve the tile information, which makes the parsing algorithm's time complexity O(n), for n tiles, and there is no possibility for improvement of it's time complexity. One improvement I could make with regards to the tile information retrieval however would be to improve the time of the operations performed to store the tile information in my map array.
 
 Another limitation is simply the speed of the backtracking algorithm. In this case, I perform some unnecessary computations for the visualization of the algorithm, for example the creation of the objects marking where the algorithm has searched which could be made faster, but the time complexity of the algorithm, O(n), could not be improved.
+
+## More algorithm visualization
+![](HardMaze2.gif)
+![](Mazes.gif)
