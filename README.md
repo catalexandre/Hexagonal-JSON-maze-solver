@@ -28,7 +28,7 @@ The algorithm I chose to implement to solve the mazes was a simple backtracking 
 4. Repeat step two and three until you have nowhere to go, which is when you will then go back to the tile you get when removing the last tile off of the nodes tiles stack
 5. Stop the algorithm when you move to the END tile and return the solution as the tiles you have never backtracked onto.
 
-This depth-first search (DFS) algorithm indeed looks easy when written as four basic steps, and I will agree with you that it is probably one of the easiest maze solving algorithms I could have chosen to implement, but the difficulty comes from the implementation of this 
+This algorithm indeed looks easy when written as four basic steps, and I will agree with you that it is probably one of the easiest maze solving algorithms I could have chosen to implement, but the difficulty comes from the implementation of this 
 algorithm in a program used to solve Hexagonal mazes, rather than a square-tiled maze.
 
 I had considered implementing the A* algorithm, but I established that in the context of a competition with limited time, this decision would not give me the chance to finish within the alloted time period.
@@ -42,4 +42,7 @@ Here is a Intermediate level maze being solved by my algorithm
 Here is a Hard level maze being solved by my algorithm
 ![](HardMaze.gif)
 
-The algorithm is not extremely fast to parse the JSON files, and this becomes increasingly obvious when I open HARD level mazes, but I assume that these limitations comes from GameMaker Studio 2's JSON functions, as being a game engine, it is most likely not supposed to be used to parse JSON files of one hundred twenty-five thousand lines.
+## Limitations of my solution
+The algorithm is not extremely fast to parse the JSON files, and this becomes increasingly obvious when I open HARD level mazes, or the fact that I have never managed to open a extreme level maze, but I assume that these limitations come from GameMaker Studio 2's JSON functions, as being a game engine, it is most likely not supposed to be used to parse JSON files of one hundred twenty-five thousand lines. I use a simple for loop to traverse the JSON string and retrieve the tile information, which makes the parsing algorithm's time complexity O(n), for n tiles, and there is no possibility for improvement of it's time complexity. One improvement I could make with regards to the tile information retrieval however would be to improve the time of the operations performed to store the tile information in my map array.
+
+Another limitation is simply the speed of the backtracking algorithm. In this case, I perform some unnecessary computations for the visualization of the algorithm, for example the creation of the objects marking where the algorithm has searched which could be made faster, but the time complexity of the algorithm, O(n), could not be improved.
